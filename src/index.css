@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Notebook Paper & Child Doodle styling */
+@layer utilities {
+  .paper-shadow {
+    box-shadow: 4px 6px 0px rgba(40, 30, 20, 0.85);
+  }
+  .paper-shadow-sm {
+    box-shadow: 2px 3px 0px rgba(40, 30, 20, 0.85);
+  }
+  .paper-shadow-lg {
+    box-shadow: 6px 9px 0px rgba(40, 30, 20, 0.85);
+  }
+  .doodle-border {
+    border: 3px solid #2d2a26;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+  .doodle-border-sm {
+    border: 2px solid #2d2a26;
+    border-radius: 255px 10px 225px 10px/10px 225px 10px 255px;
+  }
+  .notebook-pattern {
+    background-color: #fdfbf7;
+    background-image: 
+      linear-gradient(#a4c2e6 1.2px, transparent 1.2px);
+    background-size: 100% 28px;
+  }
+  .notebook-margin {
+    border-left: 2.5px solid #e07a7a;
+  }
+}
+
+/* Pulse animation for banner messages */
+@keyframes doodle-wobble {
+  0% { transform: rotate(-1.5deg) scale(1); }
+  50% { transform: rotate(1.5deg) scale(1.02); }
+  100% { transform: rotate(-1.5deg) scale(1); }
+}
+
+.animate-doodle {
+  animation: doodle-wobble 0.6s infinite ease-in-out;
+}
+

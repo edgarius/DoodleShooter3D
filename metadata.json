@@ -1,0 +1,6 @@
+{
+  "name": "Doodle Shooter 3D - Rabiscos no Papel",
+  "description": "Jogo de tiro 3D em primeira pessoa no navegador com visual de desenhos infantis em folha de caderno pautada e giz de cera.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
